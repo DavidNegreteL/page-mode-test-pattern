@@ -1,0 +1,2 @@
+echo "Ejecutando pruebas E2E antes del push..."
+npm test:e2e
