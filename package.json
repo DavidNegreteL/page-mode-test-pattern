@@ -1,0 +1,23 @@
+{
+  "name": "page_mode_test_pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --tags @e2e",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "base64-img": "^1.0.4",
+    "testcafe": "^3.7.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@faker-js/faker": "^9.4.0",
+    "husky": "^9.1.7"
+  }
+}
