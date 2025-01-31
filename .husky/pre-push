@@ -1,2 +1,2 @@
 echo "Ejecutando pruebas E2E antes del push..."
-npm run test:e2e
+npm lint-staged

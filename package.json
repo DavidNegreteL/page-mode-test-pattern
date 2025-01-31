@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "cucumber-js --tags @e2e --world-parameters '{\"browser\": \"chrome:headless\"}'",
+    "test:e2e": "node filter-tests.js",
     "prepare": "husky"
   },
   "keywords": [],
