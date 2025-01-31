@@ -76,7 +76,7 @@ Then("the app should be created with the random name", async function () {
   await testController
     .expect(
       workspacesPage.WorkspacesPageElements.Heading(
-        `Automate ${this.randomAppName}`
+        `Automated ${this.randomAppName}`
       ).exists
     )
     .ok();

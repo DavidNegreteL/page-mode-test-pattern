@@ -1,11 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-echo "🚀 Ejecutando pruebas E2E antes del commit..."
+echo "Ejecutando pruebas E2E antes del commit..."
 npm run test:e2e
-if [ $? -eq 0 ]; then
-  echo "✅ Todas las pruebas pasaron. Continuando con el commit..."
-else
-  echo "❌ Algunas pruebas fallaron. Commit cancelado."
-  exit 1
-fi
