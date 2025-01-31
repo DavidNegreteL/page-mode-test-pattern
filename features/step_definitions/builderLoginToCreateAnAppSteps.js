@@ -62,7 +62,7 @@ Then("set the app name to a random name", async function () {
   this.randomAppName = faker.hacker.adjective();
   await testController.typeText(
     homePage.HomePageElements.NewAppNameField(),
-    this.randomAppName
+    `Automated ${this.randomAppName}`
   );
 });
 
@@ -75,7 +75,9 @@ When("click the Create app button", async function () {
 Then("the app should be created with the random name", async function () {
   await testController
     .expect(
-      workspacesPage.WorkspacesPageElements.Heading(this.randomAppName).exists
+      workspacesPage.WorkspacesPageElements.Heading(
+        `Automate ${this.randomAppName}`
+      ).exists
     )
     .ok();
 });

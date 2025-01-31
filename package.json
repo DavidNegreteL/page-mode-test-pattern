@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --tags @e2e",
+    "test:e2e": "cucumber-js --tags @e2e",
     "prepare": "husky"
   },
   "keywords": [],
